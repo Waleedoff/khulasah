@@ -1,4 +1,10 @@
 {
+  "settings": {
+    "react": {
+      "version": "detect" // Automatically detects the React version
+    }
+  },
+
   "env": {
     "browser": true,
     "node": true,
@@ -14,7 +20,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["@typescript-eslint", "react", "simple-import-sort", "import"],
+  "plugins": ["@typescript-eslint", "react", "simple-import-sort"],
   "rules": {
     "react/no-unescaped-entities": 0,
     "react/prop-types": "off",
@@ -30,24 +36,8 @@
         "next": "return"
       }
     ],
-    "import/order": [
-      "error",
-      {
-        "groups": ["builtin", "external", "internal"],
-        "pathGroupsExcludedImportTypes": [],
-        "newlines-between": "always",
-        "alphabetize": {
-          "order": "asc",
-          "caseInsensitive": true
-        }
-      }
-    ],
-    "import/no-unresolved": "off",
-    "import/named": "warn",
-    "import/namespace": "warn",
     "no-console": "error",
     "no-constant-condition": "warn",
-    "import/no-named-as-default": "warn",
     "@typescript-eslint/no-unused-vars": "error"
   }
 }
