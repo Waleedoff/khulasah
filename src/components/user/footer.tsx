@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 md:space-x-4 px-4">
         {/* Left Section: Logo */}
         <div className="flex justify-center md:justify-start items-center space-x-4">
-          <img src="/" alt="Logo" className="w-24" />{" "}
+          <img src="/assets/images/khul.png" alt="Logo" className="w-24" />{" "}
           {/* Adjust size accordingly */}
         </div>
 

@@ -29,10 +29,10 @@ const StepperCheck = (props: StepperCheckProps) => {
                 currentStep === props.steps.length - 1
                   ? "bg-gray-500 text-white"
                   : "bg-gray-200 text-gray-600"
-                    ? index === currentStep
-                      ? "bg-amber-400 text-white"
-                      : "bg-gray-200 text-gray-600"
-                    : ""
+                  ? index === currentStep
+                    ? "bg-amber-400 text-white"
+                    : "bg-gray-200 text-gray-600"
+                  : ""
               }
                  h-1 rounded-sm w-full`}
             ></div>

@@ -46,10 +46,10 @@ function TextInputS1({
    props.value && props.dir === DirectionEnum.LTR
      ? `transform -translate-y-5 -translate-x-4 scale-75`
      : props.value && props.dir === DirectionEnum.RTL
-       ? "transform -translate-y-5 translate-x-3 scale-75"
-       : props.value
-         ? "text-gray-500 translate-x-4 -translate-y-5 scale-75"
-         : ""
+     ? "transform -translate-y-5 translate-x-3 scale-75"
+     : props.value
+     ? "text-gray-500 translate-x-4 -translate-y-5 scale-75"
+     : ""
  }
   ${isValid ? "" : "text-red-500 peer-focus:text-red-500 focus:text-red-500"}}`;
     switch (variant) {
@@ -63,10 +63,10 @@ function TextInputS1({
           props.value && props.dir === DirectionEnum.LTR
             ? ` -translate-y-8 -translate-x-8`
             : props.value && props.dir === DirectionEnum.RTL
-              ? "-translate-y-8 translate-x-8"
-              : props.value
-                ? "translate-x-8 -translate-y-8"
-                : ""
+            ? "-translate-y-8 translate-x-8"
+            : props.value
+            ? "translate-x-8 -translate-y-8"
+            : ""
         }`;
       case InputStylesEnum.STYLE2:
         return `flex text-sm peer-focus:transform peer-focus:-translate-y-5 peer-focus:scale-75 text-opacity-80 bg-transparent px-1 ${commonStyle}`;

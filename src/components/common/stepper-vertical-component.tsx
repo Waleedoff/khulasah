@@ -33,10 +33,10 @@ const StepperVertical = (props: Iitem) => {
                   currentStep === props.items.length - 1
                     ? "bg-amber-500 text-white"
                     : "bg-white border border-gray-400 text-gray-400"
-                      ? index === currentStep
-                        ? "border border-amber-500 text-white"
-                        : "bg-white border border-gray-400 text-gray-400"
-                      : ""
+                    ? index === currentStep
+                      ? "border border-amber-500 text-white"
+                      : "bg-white border border-gray-400 text-gray-400"
+                    : ""
                 }
                   p-2 w-8 h-8 flex-col items-center justify-center flex rounded-full cursor-pointer`}
               >

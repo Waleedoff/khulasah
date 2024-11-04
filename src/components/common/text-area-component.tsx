@@ -37,9 +37,9 @@ function TextAreaStlye({
       ? ((isValid = false),
         "focus:border-red-500 border-red-500 peer-focus:text-red-600 hover:border-red-500")
       : (props.value?.toString().length || 0) > limit
-        ? ((isValid = false),
-          "border-red-500 focus:border-red-500 focus:border-2" + true)
-        : ((isValid = true), "");
+      ? ((isValid = false),
+        "border-red-500 focus:border-red-500 focus:border-2" + true)
+      : ((isValid = true), "");
   };
   const getLabelVarient = () => {
     const commonStyle = `${
@@ -50,10 +50,10 @@ function TextAreaStlye({
       props.value && props.dir === DirectionEnum.LTR
         ? "transform -translate-y-3 -translate-x-1.5 scale-75 text-xs"
         : props.value && props.dir === DirectionEnum.RTL
-          ? "transform -translate-y-3 translate-x-1.5 scale-75 text-xs"
-          : props.value
-            ? "transform -translate-y-3 translate-x-1.5 scale-75 text-xs"
-            : ""
+        ? "transform -translate-y-3 translate-x-1.5 scale-75 text-xs"
+        : props.value
+        ? "transform -translate-y-3 translate-x-1.5 scale-75 text-xs"
+        : ""
     } ${isValid ? "" : "text-red-500 peer-focus:text-red-500"}`;
 
     switch (variant) {
@@ -67,10 +67,10 @@ function TextAreaStlye({
           props.value && props.dir === DirectionEnum.LTR
             ? "transform -translate-y-6 -translate-x-8 scale-75"
             : props.value && props.dir === DirectionEnum.RTL
-              ? "transform -translate-y-6 translate-x-8 scale-75"
-              : props.value
-                ? "translate-x-8 -translate-y-6 scale-75"
-                : ""
+            ? "transform -translate-y-6 translate-x-8 scale-75"
+            : props.value
+            ? "translate-x-8 -translate-y-6 scale-75"
+            : ""
         }
         ${isValid ? "" : "text-red-500 peer-focus:text-red-500"}`;
       case InputStylesEnum.STYLE2:

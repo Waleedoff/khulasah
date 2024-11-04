@@ -64,8 +64,7 @@ const CustomSection: React.FC = () => {
       <div className={`flex items-center justify-center text-center mb-6 px-2`}>
         <FaThumbsUp className="text-2xl md:text-4xl text-[#FF5E6C] ml-2 md:ml-3" />
         <h1 className="text-2xl md:text-4xl font-bold text-[#6A4BFF] leading-tight md:leading-normal">
-          ليش تختار خلاصة؟{" "}
-          <span className="text-[#4285F4]">لأننا نلخص لك أهم التحديثات</span>!
+          لِمَ خلاصة؟{" "}
         </h1>
         <FaPencilAlt className="text-2xl md:text-4xl text-[#FFBB00] mr-2 md:mr-3" />
       </div>
@@ -75,32 +74,43 @@ const CustomSection: React.FC = () => {
 
       {/* Idea Bubbles with drop-in animation */}
       <div
-        className={`flex flex-wrap justify-center mt-4 md:mt-6 space-x-2 space-y-4 max-w-4xl`}
+        className={`flex flex-wrap justify-center mt-4 md:mt-6 space-x-2 gap-y-2 max-w-4xl`}
       >
         <span
-          className={`bg-purple-200 text-purple-800 px-3 py-2 md:px-4 md:py-2 rounded-full ${isVisible ? `animate-${getRandomAnimation()} ${getRandomDelay(100)}` : ""}`}
+          className={`bg-purple-200 text-purple-800 px-3 py-2 md:px-4 md:py-2 rounded-full ${
+            isVisible
+              ? `animate-${getRandomAnimation()} ${getRandomDelay(100)}`
+              : ""
+          }`}
         >
-          نتابع لك أهم التحديثات في مجالك
+          تجد هنا أهمّ وآخر التحديثات في مجالات عملك أو اهتمامك
         </span>
         <span
-          className={`bg-green-200 text-green-800 px-3 py-2 md:px-4 md:py-2 rounded-full ${isVisible ? `animate-${getRandomAnimation()} ${getRandomDelay(200)}` : ""}`}
+          className={`bg-green-200 text-green-800 px-3 py-2 md:px-4 md:py-2 rounded-full ${
+            isVisible
+              ? `animate-${getRandomAnimation()} ${getRandomDelay(200)}`
+              : ""
+          }`}
         >
-          نوفر لك ملخصات دقيقة وسريعة
+          ملخصات دورية وتحديثات فورية
         </span>
         <span
-          className={`bg-red-200 text-red-800 px-3 py-2 md:px-4 md:py-2 rounded-full ${isVisible ? `animate-${getRandomAnimation()} ${getRandomDelay(300)}` : ""}`}
+          className={`bg-red-200 text-red-800 px-3 py-2 md:px-4 md:py-2 rounded-full ${
+            isVisible
+              ? `animate-${getRandomAnimation()} ${getRandomDelay(300)}`
+              : ""
+          }`}
         >
-          كل المعلومات اللي تحتاجها في مكان واحد
+          تؤثر تغييرات السوق على قراراتك في نطاق العمل؟ كُن أول من يتلقَ الخبر!
         </span>
         <span
-          className={`bg-blue-200 text-blue-800 px-3 py-2 md:px-4 md:py-2 rounded-full ${isVisible ? `animate-${getRandomAnimation()} ${getRandomDelay(400)}` : ""}`}
+          className={`bg-blue-200 text-blue-800 px-3 py-2 md:px-4 md:py-2 rounded-full ${
+            isVisible
+              ? `animate-${getRandomAnimation()} ${getRandomDelay(400)}`
+              : ""
+          }`}
         >
-          تحديثات مستمرة وفورية
-        </span>
-        <span
-          className={`bg-pink-200 text-pink-800 px-3 py-2 md:px-4 md:py-2 rounded-full ${isVisible ? `animate-${getRandomAnimation()} ${getRandomDelay(500)}` : ""}`}
-        >
-          ركز في عملك واحنا نهتم بالتحديثات
+          ننتقي لك المعرفة، لنقلل من جهودك في البحث عنها
         </span>
       </div>
     </div>
