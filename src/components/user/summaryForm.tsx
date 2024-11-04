@@ -45,7 +45,7 @@ export default function SummaryForm() {
     <section className="w-full grid place-items-center gap-10 animate-drop-in">
       <h1 className="font-bold text-3xl md:text-4xl text-[#1f1f56] w-screen max-w-fit">
         ارفق الملف المراد{" "}
-        <span className="text-[#0c0aff] underline">تخليصه</span>
+        <span className="text-[#0c0aff] underline">تلخيصه</span>
       </h1>
       <form
         onSubmit={submitHandler}
