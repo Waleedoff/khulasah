@@ -8,7 +8,7 @@ module.exports = {
         "drop-in-right": "dropInRight 1s ease-out forwards",
         "drop-in-up": "dropInUp 1s ease-out forwards",
         "drop-in-down": "dropInDown 1s ease-out forwards",
-        "drop-in": "dropIn 1s ease-out forwards",
+        "drop-in": "dropIn 0.5s ease-out forwards",
         "slide-in": "slide-in 0.5s ease-out forwards",
         "fade-in": "fade-in 0.5s ease-in-out forwards",
       },

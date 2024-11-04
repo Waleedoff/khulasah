@@ -28,10 +28,10 @@ const Stepper = (props: StepperProps) => {
                 currentStep === props.steps.length - 1
                   ? "bg-amber-500 text-white"
                   : "bg-gray-200 text-gray-600"
-                    ? index === currentStep
-                      ? "bg-amber-400 text-white"
-                      : "bg-gray-200 text-gray-600"
-                    : ""
+                  ? index === currentStep
+                    ? "bg-amber-400 text-white"
+                    : "bg-gray-200 text-gray-600"
+                  : ""
               }
                   p-2 w-6 h-6 items-center justify-center flex rounded-full cursor-pointer`}
             >

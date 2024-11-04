@@ -30,7 +30,9 @@ const PricingCard: React.FC<PricingCardProps> = ({
       <div className="flex-grow">
         {/* Title and Description */}
         <h2
-          className={`text-2xl font-bold ${isHighlighted ? "text-white" : "text-gray-800"}`}
+          className={`text-2xl font-bold ${
+            isHighlighted ? "text-white" : "text-gray-800"
+          }`}
         >
           {title}
         </h2>

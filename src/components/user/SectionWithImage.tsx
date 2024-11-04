@@ -90,7 +90,11 @@ const SectionWithImage: React.FC<SectionWithImageProps> = ({ images }) => {
               {sections.map((section, index) => (
                 <div
                   key={index}
-                  className={`mb-8 ${index === currentSection ? "font-bold text-black" : "text-gray-400"}`}
+                  className={`mb-8 ${
+                    index === currentSection
+                      ? "font-bold text-black"
+                      : "text-gray-400"
+                  }`}
                   style={{ scrollSnapAlign: "start" }}
                 >
                   <h3 className="text-lg md:text-2xl mb-2">{section.title}</h3>

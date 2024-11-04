@@ -30,10 +30,10 @@ const StepperArrow = (props: Iitem) => {
                 currentStep === props.items.length - 1
                   ? ""
                   : "bg-amber-600"
-                    ? index === currentStep
-                      ? "bg-amber-600"
-                      : "bg-gray-400"
+                  ? index === currentStep
+                    ? "bg-amber-600"
                     : "bg-gray-400"
+                  : "bg-gray-400"
               }
                center3 rounded flex absolute w-[370.9px]
               `}
@@ -50,10 +50,10 @@ const StepperArrow = (props: Iitem) => {
               currentStep === props.items.length - 1
                 ? "bg-gray-500 text-white"
                 : "bg-white border border-gray-400"
-                  ? index === currentStep
-                    ? "bg-amber-50 text-amber-600 border border-amber-600"
-                    : "bg-white border border-gray-400 "
-                  : ""
+                ? index === currentStep
+                  ? "bg-amber-50 text-amber-600 border border-amber-600"
+                  : "bg-white border border-gray-400 "
+                : ""
             }
             `}
             >
